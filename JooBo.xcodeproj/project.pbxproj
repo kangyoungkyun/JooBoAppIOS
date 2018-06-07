@@ -1,0 +1,542 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		52105B8620C7720D005DDF9A /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52105B8520C7720D005DDF9A /* LoginController.swift */; };
+		52105B8C20C7897E005DDF9A /* JooBoTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52105B8B20C7897E005DDF9A /* JooBoTVC.swift */; };
+		52105B8E20C79296005DDF9A /* MyUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52105B8D20C79296005DDF9A /* MyUIView.swift */; };
+		52105B9020C7A70E005DDF9A /* JooboOneModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52105B8F20C7A70E005DDF9A /* JooboOneModel.swift */; };
+		52105B9220C7B3D2005DDF9A /* JooBoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52105B9120C7B3D2005DDF9A /* JooBoCell.swift */; };
+		52105B9420C7BC2E005DDF9A /* NanumGothic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 52105B9320C7BC21005DDF9A /* NanumGothic.otf */; };
+		52105B9620C7BF92005DDF9A /* NanumMyeongjo-YetHangul.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52105B9520C7BF90005DDF9A /* NanumMyeongjo-YetHangul.ttf */; };
+		52105B9820C8C0F0005DDF9A /* main3.png in Resources */ = {isa = PBXBuildFile; fileRef = 52105B9720C8C0F0005DDF9A /* main3.png */; };
+		52811D3820C7678D00B9F248 /* HideKeyBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52811D3720C7678D00B9F248 /* HideKeyBoard.swift */; };
+		52D2C2F020C8F21000A001B1 /* login.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 52D2C2EF20C8F21000A001B1 /* login.jpg */; };
+		52D2C2F220C8F26C00A001B1 /* login2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 52D2C2F120C8F26C00A001B1 /* login2.jpg */; };
+		52D2C2F420C8F59700A001B1 /* schedule.txt in Resources */ = {isa = PBXBuildFile; fileRef = 52D2C2F320C8F59700A001B1 /* schedule.txt */; };
+		52D2C2F620C913F500A001B1 /* JooBoTVC+table.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D2C2F520C913F500A001B1 /* JooBoTVC+table.swift */; };
+		52D2C2F820C9155B00A001B1 /* JooBoTVC+HeaderFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D2C2F720C9155B00A001B1 /* JooBoTVC+HeaderFooterView.swift */; };
+		52D2C2FA20C917A500A001B1 /* JooBoTVC+Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D2C2F920C917A500A001B1 /* JooBoTVC+Data.swift */; };
+		52D2C2FC20C918C900A001B1 /* JooBoTVC+LoginCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D2C2FB20C918C900A001B1 /* JooBoTVC+LoginCheck.swift */; };
+		52D2C2FE20C9194B00A001B1 /* JooBoTVC+LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D2C2FD20C9194B00A001B1 /* JooBoTVC+LoadingView.swift */; };
+		52F5E95D20C75F3700D625AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F5E95C20C75F3700D625AA /* AppDelegate.swift */; };
+		52F5E96220C75F3700D625AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52F5E96020C75F3700D625AA /* Main.storyboard */; };
+		52F5E96520C75F3700D625AA /* JooBo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 52F5E96320C75F3700D625AA /* JooBo.xcdatamodeld */; };
+		52F5E96720C75F3700D625AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52F5E96620C75F3700D625AA /* Assets.xcassets */; };
+		52F5E96A20C75F3700D625AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52F5E96820C75F3700D625AA /* LaunchScreen.storyboard */; };
+		52F5E97220C75FA000D625AA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 52F5E97120C75FA000D625AA /* GoogleService-Info.plist */; };
+		B2DA5FAD5766F9E8F8B3B234 /* Pods_JooBo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FA7205BB052A471435CFE22 /* Pods_JooBo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2FA7205BB052A471435CFE22 /* Pods_JooBo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JooBo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		52105B8520C7720D005DDF9A /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		52105B8B20C7897E005DDF9A /* JooBoTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JooBoTVC.swift; sourceTree = "<group>"; };
+		52105B8D20C79296005DDF9A /* MyUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyUIView.swift; sourceTree = "<group>"; };
+		52105B8F20C7A70E005DDF9A /* JooboOneModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JooboOneModel.swift; sourceTree = "<group>"; };
+		52105B9120C7B3D2005DDF9A /* JooBoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JooBoCell.swift; sourceTree = "<group>"; };
+		52105B9320C7BC21005DDF9A /* NanumGothic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumGothic.otf; sourceTree = "<group>"; };
+		52105B9520C7BF90005DDF9A /* NanumMyeongjo-YetHangul.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NanumMyeongjo-YetHangul.ttf"; sourceTree = "<group>"; };
+		52105B9720C8C0F0005DDF9A /* main3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main3.png; sourceTree = "<group>"; };
+		52811D3720C7678D00B9F248 /* HideKeyBoard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HideKeyBoard.swift; sourceTree = "<group>"; };
+		52D2C2EF20C8F21000A001B1 /* login.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = login.jpg; sourceTree = "<group>"; };
+		52D2C2F120C8F26C00A001B1 /* login2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = login2.jpg; sourceTree = "<group>"; };
+		52D2C2F320C8F59700A001B1 /* schedule.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = schedule.txt; sourceTree = "<group>"; };
+		52D2C2F520C913F500A001B1 /* JooBoTVC+table.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JooBoTVC+table.swift"; sourceTree = "<group>"; };
+		52D2C2F720C9155B00A001B1 /* JooBoTVC+HeaderFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JooBoTVC+HeaderFooterView.swift"; sourceTree = "<group>"; };
+		52D2C2F920C917A500A001B1 /* JooBoTVC+Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JooBoTVC+Data.swift"; sourceTree = "<group>"; };
+		52D2C2FB20C918C900A001B1 /* JooBoTVC+LoginCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JooBoTVC+LoginCheck.swift"; sourceTree = "<group>"; };
+		52D2C2FD20C9194B00A001B1 /* JooBoTVC+LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JooBoTVC+LoadingView.swift"; sourceTree = "<group>"; };
+		52F5E95920C75F3700D625AA /* JooBo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JooBo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		52F5E95C20C75F3700D625AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		52F5E96120C75F3700D625AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		52F5E96420C75F3700D625AA /* JooBo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = JooBo.xcdatamodel; sourceTree = "<group>"; };
+		52F5E96620C75F3700D625AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		52F5E96920C75F3700D625AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		52F5E96B20C75F3700D625AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52F5E97120C75FA000D625AA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7B87B777DD330CF42CF43094 /* Pods-JooBo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JooBo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JooBo/Pods-JooBo.debug.xcconfig"; sourceTree = "<group>"; };
+		900A092BB4C5E47CA5DF2457 /* Pods-JooBo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JooBo.release.xcconfig"; path = "Pods/Target Support Files/Pods-JooBo/Pods-JooBo.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		52F5E95620C75F3700D625AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2DA5FAD5766F9E8F8B3B234 /* Pods_JooBo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04D0E2649F8C37CCC195295E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2FA7205BB052A471435CFE22 /* Pods_JooBo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		52B1FC1920C761770068EFA5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				52105B8520C7720D005DDF9A /* LoginController.swift */,
+				52105B8B20C7897E005DDF9A /* JooBoTVC.swift */,
+				52D2C2F520C913F500A001B1 /* JooBoTVC+table.swift */,
+				52D2C2F720C9155B00A001B1 /* JooBoTVC+HeaderFooterView.swift */,
+				52D2C2F920C917A500A001B1 /* JooBoTVC+Data.swift */,
+				52D2C2FB20C918C900A001B1 /* JooBoTVC+LoginCheck.swift */,
+				52D2C2FD20C9194B00A001B1 /* JooBoTVC+LoadingView.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		52D2C2EB20C8F0E200A001B1 /* File */ = {
+			isa = PBXGroup;
+			children = (
+				52D2C2F120C8F26C00A001B1 /* login2.jpg */,
+				52D2C2EF20C8F21000A001B1 /* login.jpg */,
+				52105B9320C7BC21005DDF9A /* NanumGothic.otf */,
+				52105B9520C7BF90005DDF9A /* NanumMyeongjo-YetHangul.ttf */,
+				52105B9720C8C0F0005DDF9A /* main3.png */,
+				52D2C2F320C8F59700A001B1 /* schedule.txt */,
+			);
+			path = File;
+			sourceTree = "<group>";
+		};
+		52D2C2EC20C8F0EF00A001B1 /* Function */ = {
+			isa = PBXGroup;
+			children = (
+				52811D3720C7678D00B9F248 /* HideKeyBoard.swift */,
+			);
+			path = Function;
+			sourceTree = "<group>";
+		};
+		52D2C2ED20C8F0FD00A001B1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				52105B8F20C7A70E005DDF9A /* JooboOneModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		52D2C2EE20C8F10400A001B1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				52105B9120C7B3D2005DDF9A /* JooBoCell.swift */,
+				52105B8D20C79296005DDF9A /* MyUIView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		52F5E95020C75F3700D625AA = {
+			isa = PBXGroup;
+			children = (
+				52F5E95B20C75F3700D625AA /* JooBo */,
+				F5654E993EE3F710750D9FB5 /* Pods */,
+				04D0E2649F8C37CCC195295E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		52F5E95A20C75F3700D625AA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52F5E95920C75F3700D625AA /* JooBo.app */,
+			);
+			name = Products;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		52F5E95B20C75F3700D625AA /* JooBo */ = {
+			isa = PBXGroup;
+			children = (
+				52F5E95C20C75F3700D625AA /* AppDelegate.swift */,
+				52D2C2ED20C8F0FD00A001B1 /* Model */,
+				52D2C2EE20C8F10400A001B1 /* View */,
+				52B1FC1920C761770068EFA5 /* Controller */,
+				52D2C2EC20C8F0EF00A001B1 /* Function */,
+				52D2C2EB20C8F0E200A001B1 /* File */,
+				52F5E95A20C75F3700D625AA /* Products */,
+				52F5E96020C75F3700D625AA /* Main.storyboard */,
+				52F5E96620C75F3700D625AA /* Assets.xcassets */,
+				52F5E96820C75F3700D625AA /* LaunchScreen.storyboard */,
+				52F5E96B20C75F3700D625AA /* Info.plist */,
+				52F5E96320C75F3700D625AA /* JooBo.xcdatamodeld */,
+				52F5E97120C75FA000D625AA /* GoogleService-Info.plist */,
+			);
+			path = JooBo;
+			sourceTree = "<group>";
+		};
+		F5654E993EE3F710750D9FB5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7B87B777DD330CF42CF43094 /* Pods-JooBo.debug.xcconfig */,
+				900A092BB4C5E47CA5DF2457 /* Pods-JooBo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		52F5E95820C75F3700D625AA /* JooBo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52F5E96E20C75F3700D625AA /* Build configuration list for PBXNativeTarget "JooBo" */;
+			buildPhases = (
+				3D266A007554578CC0865199 /* [CP] Check Pods Manifest.lock */,
+				52F5E95520C75F3700D625AA /* Sources */,
+				52F5E95620C75F3700D625AA /* Frameworks */,
+				52F5E95720C75F3700D625AA /* Resources */,
+				0E4A2DA68D330C7034C65F9E /* [CP] Embed Pods Frameworks */,
+				078053F4798650DBEB1E1837 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JooBo;
+			productName = JooBo;
+			productReference = 52F5E95920C75F3700D625AA /* JooBo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		52F5E95120C75F3700D625AA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = MacBookPro;
+				TargetAttributes = {
+					52F5E95820C75F3700D625AA = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 52F5E95420C75F3700D625AA /* Build configuration list for PBXProject "JooBo" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 52F5E95020C75F3700D625AA;
+			productRefGroup = 52F5E95A20C75F3700D625AA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				52F5E95820C75F3700D625AA /* JooBo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		52F5E95720C75F3700D625AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52F5E96A20C75F3700D625AA /* LaunchScreen.storyboard in Resources */,
+				52D2C2F020C8F21000A001B1 /* login.jpg in Resources */,
+				52F5E96720C75F3700D625AA /* Assets.xcassets in Resources */,
+				52D2C2F220C8F26C00A001B1 /* login2.jpg in Resources */,
+				52F5E96220C75F3700D625AA /* Main.storyboard in Resources */,
+				52105B9420C7BC2E005DDF9A /* NanumGothic.otf in Resources */,
+				52105B9820C8C0F0005DDF9A /* main3.png in Resources */,
+				52105B9620C7BF92005DDF9A /* NanumMyeongjo-YetHangul.ttf in Resources */,
+				52F5E97220C75FA000D625AA /* GoogleService-Info.plist in Resources */,
+				52D2C2F420C8F59700A001B1 /* schedule.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		078053F4798650DBEB1E1837 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JooBo/Pods-JooBo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0E4A2DA68D330C7034C65F9E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-JooBo/Pods-JooBo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JooBo/Pods-JooBo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3D266A007554578CC0865199 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JooBo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		52F5E95520C75F3700D625AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52811D3820C7678D00B9F248 /* HideKeyBoard.swift in Sources */,
+				52105B8620C7720D005DDF9A /* LoginController.swift in Sources */,
+				52105B8E20C79296005DDF9A /* MyUIView.swift in Sources */,
+				52105B9220C7B3D2005DDF9A /* JooBoCell.swift in Sources */,
+				52D2C2FE20C9194B00A001B1 /* JooBoTVC+LoadingView.swift in Sources */,
+				52D2C2FC20C918C900A001B1 /* JooBoTVC+LoginCheck.swift in Sources */,
+				52105B8C20C7897E005DDF9A /* JooBoTVC.swift in Sources */,
+				52F5E95D20C75F3700D625AA /* AppDelegate.swift in Sources */,
+				52105B9020C7A70E005DDF9A /* JooboOneModel.swift in Sources */,
+				52D2C2FA20C917A500A001B1 /* JooBoTVC+Data.swift in Sources */,
+				52D2C2F620C913F500A001B1 /* JooBoTVC+table.swift in Sources */,
+				52D2C2F820C9155B00A001B1 /* JooBoTVC+HeaderFooterView.swift in Sources */,
+				52F5E96520C75F3700D625AA /* JooBo.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		52F5E96020C75F3700D625AA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52F5E96120C75F3700D625AA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		52F5E96820C75F3700D625AA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52F5E96920C75F3700D625AA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		52F5E96C20C75F3700D625AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		52F5E96D20C75F3700D625AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		52F5E96F20C75F3700D625AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B87B777DD330CF42CF43094 /* Pods-JooBo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3HFR2QP3B2;
+				INFOPLIST_FILE = JooBo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.happy.JooBo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		52F5E97020C75F3700D625AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 900A092BB4C5E47CA5DF2457 /* Pods-JooBo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3HFR2QP3B2;
+				INFOPLIST_FILE = JooBo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.happy.JooBo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		52F5E95420C75F3700D625AA /* Build configuration list for PBXProject "JooBo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52F5E96C20C75F3700D625AA /* Debug */,
+				52F5E96D20C75F3700D625AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52F5E96E20C75F3700D625AA /* Build configuration list for PBXNativeTarget "JooBo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52F5E96F20C75F3700D625AA /* Debug */,
+				52F5E97020C75F3700D625AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		52F5E96320C75F3700D625AA /* JooBo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				52F5E96420C75F3700D625AA /* JooBo.xcdatamodel */,
+			);
+			currentVersion = 52F5E96420C75F3700D625AA /* JooBo.xcdatamodel */;
+			path = JooBo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 52F5E95120C75F3700D625AA /* Project object */;
+}
