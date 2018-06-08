@@ -5,7 +5,7 @@ class LoginController: UIViewController,UITextFieldDelegate,UIPickerViewDelegate
     
     //-1
     var jooboTVC: JooBoTVC?
-    
+    var mainVC : MainVC?
     //피커뷰 데이터
     var churchArray:[String] = []
     

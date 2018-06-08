@@ -47,6 +47,8 @@ extension JooBoTVC {
                 self.loadingView.transform = CGAffineTransform(translationX: 0, y: -800)
             })
         }
+        //로딩뷰 숨기기
+         self.loadingPageCheck = false
     }
     
 

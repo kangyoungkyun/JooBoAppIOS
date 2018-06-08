@@ -15,6 +15,7 @@ class JooBoTVC: UITableViewController {
     var jooboTVC : JooBoTVC?
     var churchName : String?
     let cellId = "cellId"
+    var loadingPageCheck = true
     
     
     //헤더
@@ -145,7 +146,13 @@ class JooBoTVC: UITableViewController {
     
     //뷰가 로딩되기 시작할때 먼저 로딩뷰 띄우기
     override func viewWillAppear(_ animated: Bool) {
-        showLoadingScreen()
+        
+        if(loadingPageCheck){
+            showLoadingScreen()
+        }else{
+            
+        }
+        
     }
     
     //진입점
@@ -159,7 +166,9 @@ class JooBoTVC: UITableViewController {
         tableView.showsHorizontalScrollIndicator = false
         tableView.showsVerticalScrollIndicator = false
         
-        self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "logout", style: .plain, target:self , action: #selector(self.handleLogout))
+        //메인화면이동
+        self.navigationItem.leftBarButtonItem =  UIBarButtonItem(barButtonSystemItem: .bookmarks, target: self, action: #selector(self.mainActoin))
+        
         
         //네비게이션 바 색깔 변경
         self.navigationController?.navigationBar.barTintColor = UIColor(red:0.97, green:0.97, blue:0.97, alpha:1.0)
@@ -172,6 +181,14 @@ class JooBoTVC: UITableViewController {
         //로그인 로그아웃 체크
         self.checkIfUserIsLoggedIn()
         
+    }
+    
+    //메인화면 전환
+   @objc func mainActoin(){
+        let mainView = MainVC()
+        //메인상세 화면을 rootView로 만들어 주기
+        let navController = UINavigationController(rootViewController: mainView)
+        self.present(navController, animated: true, completion: nil)
     }
     
 }

@@ -14,7 +14,10 @@
 		52105B9220C7B3D2005DDF9A /* JooBoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52105B9120C7B3D2005DDF9A /* JooBoCell.swift */; };
 		52105B9420C7BC2E005DDF9A /* NanumGothic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 52105B9320C7BC21005DDF9A /* NanumGothic.otf */; };
 		52105B9620C7BF92005DDF9A /* NanumMyeongjo-YetHangul.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52105B9520C7BF90005DDF9A /* NanumMyeongjo-YetHangul.ttf */; };
-		52105B9820C8C0F0005DDF9A /* main3.png in Resources */ = {isa = PBXBuildFile; fileRef = 52105B9720C8C0F0005DDF9A /* main3.png */; };
+		5252945520CA32DF009F4981 /* headline.png in Resources */ = {isa = PBXBuildFile; fileRef = 5252945420CA32DF009F4981 /* headline.png */; };
+		5252945720CA35FE009F4981 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5252945620CA35FE009F4981 /* MainVC.swift */; };
+		5252945A20CA45DB009F4981 /* church.png in Resources */ = {isa = PBXBuildFile; fileRef = 5252945820CA45DB009F4981 /* church.png */; };
+		5252945B20CA45DB009F4981 /* worship.png in Resources */ = {isa = PBXBuildFile; fileRef = 5252945920CA45DB009F4981 /* worship.png */; };
 		52811D3820C7678D00B9F248 /* HideKeyBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52811D3720C7678D00B9F248 /* HideKeyBoard.swift */; };
 		52D2C2F020C8F21000A001B1 /* login.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 52D2C2EF20C8F21000A001B1 /* login.jpg */; };
 		52D2C2F220C8F26C00A001B1 /* login2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 52D2C2F120C8F26C00A001B1 /* login2.jpg */; };
@@ -42,7 +45,10 @@
 		52105B9120C7B3D2005DDF9A /* JooBoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JooBoCell.swift; sourceTree = "<group>"; };
 		52105B9320C7BC21005DDF9A /* NanumGothic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumGothic.otf; sourceTree = "<group>"; };
 		52105B9520C7BF90005DDF9A /* NanumMyeongjo-YetHangul.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NanumMyeongjo-YetHangul.ttf"; sourceTree = "<group>"; };
-		52105B9720C8C0F0005DDF9A /* main3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main3.png; sourceTree = "<group>"; };
+		5252945420CA32DF009F4981 /* headline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = headline.png; sourceTree = "<group>"; };
+		5252945620CA35FE009F4981 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		5252945820CA45DB009F4981 /* church.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = church.png; sourceTree = "<group>"; };
+		5252945920CA45DB009F4981 /* worship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = worship.png; sourceTree = "<group>"; };
 		52811D3720C7678D00B9F248 /* HideKeyBoard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HideKeyBoard.swift; sourceTree = "<group>"; };
 		52D2C2EF20C8F21000A001B1 /* login.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = login.jpg; sourceTree = "<group>"; };
 		52D2C2F120C8F26C00A001B1 /* login2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = login2.jpg; sourceTree = "<group>"; };
@@ -94,6 +100,7 @@
 				52D2C2F920C917A500A001B1 /* JooBoTVC+Data.swift */,
 				52D2C2FB20C918C900A001B1 /* JooBoTVC+LoginCheck.swift */,
 				52D2C2FD20C9194B00A001B1 /* JooBoTVC+LoadingView.swift */,
+				5252945620CA35FE009F4981 /* MainVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -101,11 +108,13 @@
 		52D2C2EB20C8F0E200A001B1 /* File */ = {
 			isa = PBXGroup;
 			children = (
+				5252945820CA45DB009F4981 /* church.png */,
+				5252945920CA45DB009F4981 /* worship.png */,
+				5252945420CA32DF009F4981 /* headline.png */,
 				52D2C2F120C8F26C00A001B1 /* login2.jpg */,
 				52D2C2EF20C8F21000A001B1 /* login.jpg */,
 				52105B9320C7BC21005DDF9A /* NanumGothic.otf */,
 				52105B9520C7BF90005DDF9A /* NanumMyeongjo-YetHangul.ttf */,
-				52105B9720C8C0F0005DDF9A /* main3.png */,
 				52D2C2F320C8F59700A001B1 /* schedule.txt */,
 			);
 			path = File;
@@ -247,11 +256,13 @@
 			files = (
 				52F5E96A20C75F3700D625AA /* LaunchScreen.storyboard in Resources */,
 				52D2C2F020C8F21000A001B1 /* login.jpg in Resources */,
+				5252945B20CA45DB009F4981 /* worship.png in Resources */,
 				52F5E96720C75F3700D625AA /* Assets.xcassets in Resources */,
+				5252945520CA32DF009F4981 /* headline.png in Resources */,
 				52D2C2F220C8F26C00A001B1 /* login2.jpg in Resources */,
 				52F5E96220C75F3700D625AA /* Main.storyboard in Resources */,
 				52105B9420C7BC2E005DDF9A /* NanumGothic.otf in Resources */,
-				52105B9820C8C0F0005DDF9A /* main3.png in Resources */,
+				5252945A20CA45DB009F4981 /* church.png in Resources */,
 				52105B9620C7BF92005DDF9A /* NanumMyeongjo-YetHangul.ttf in Resources */,
 				52F5E97220C75FA000D625AA /* GoogleService-Info.plist in Resources */,
 				52D2C2F420C8F59700A001B1 /* schedule.txt in Resources */,
@@ -338,6 +349,7 @@
 				52D2C2F620C913F500A001B1 /* JooBoTVC+table.swift in Sources */,
 				52D2C2F820C9155B00A001B1 /* JooBoTVC+HeaderFooterView.swift in Sources */,
 				52F5E96520C75F3700D625AA /* JooBo.xcdatamodeld in Sources */,
+				5252945720CA35FE009F4981 /* MainVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
