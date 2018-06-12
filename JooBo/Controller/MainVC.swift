@@ -123,6 +123,7 @@ class MainVC: UIViewController {
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "닫기", style: .plain, target: self, action:  #selector(cancelAction))
         self.navigationItem.title = "주보사랑"
         
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "성경본문", style: .plain, target: self, action:  #selector(showBible))
         
         //메인화면이동
         //self.navigationItem.rightBarButtonItem =  UIBarButtonItem(title: "나가기", style: .plain, target: self, action: #selector(handleLogout))
@@ -134,6 +135,14 @@ class MainVC: UIViewController {
         setLayout()
     }
 
+    //바이블 열기
+    @objc func showBible(){
+        let showBibleVC = ShowBibleVC()
+        //메인상세 화면을 rootView로 만들어 주기
+        let navController = UINavigationController(rootViewController: showBibleVC)
+        self.present(navController, animated: true, completion: nil)
+    }
+    
     //취소 함수
     @objc func cancelAction(){
         self.dismiss(animated: true, completion: nil)
