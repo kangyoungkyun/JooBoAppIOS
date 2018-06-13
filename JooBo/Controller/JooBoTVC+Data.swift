@@ -111,6 +111,7 @@ extension JooBoTVC {
                             let pray = childValue["pray"] as? String ?? ""
                             
                             
+                            //라인 간격 줄간격
                             let style = NSMutableParagraphStyle()
                             style.lineSpacing = 11
                             let attributes = [NSAttributedStringKey.paragraphStyle : style,NSAttributedStringKey.font:UIFont(name: "NanumMyeongjo-YetHangul", size: 13)]

@@ -185,10 +185,10 @@ class JooBoTVC: UITableViewController {
     
     //메인화면 전환
    @objc func mainActoin(){
-        let mainView = MainVC()
-        //메인상세 화면을 rootView로 만들어 주기
-        let navController = UINavigationController(rootViewController: mainView)
-        self.present(navController, animated: true, completion: nil)
+    let showBibleVC = ShowBibleVC()
+    //메인상세 화면을 rootView로 만들어 주기
+    let navController = UINavigationController(rootViewController: showBibleVC)
+    self.present(navController, animated: true, completion: nil)
     }
     
 }

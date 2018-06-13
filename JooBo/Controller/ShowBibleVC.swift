@@ -15,14 +15,13 @@ class ShowBibleVC: UIViewController {
         let textView = UITextView()
         textView.backgroundColor = UIColor(red:0.92, green:0.92, blue:0.92, alpha:1.0)
         textView.translatesAutoresizingMaskIntoConstraints = false
-        textView.text = "성경말씀 본문"
-        textView.font = UIFont(name: "NanumMyeongjo-YetHangul", size: 14)
+        textView.text = "성경본문을 가져오고 있습니다:)"
+        textView.font = UIFont(name: "NanumMyeongjo-YetHangul", size: 15)
         //textView.textAlignment = .center
         textView.isEditable = false
-        textView.layer.borderWidth = 0.3
-        textView.layer.cornerRadius = 5
-        textView.clipsToBounds = true
-        //textView.isScrollEnabled = false
+        textView.layer.borderWidth = 0
+        textView.layer.borderColor = UIColor(red:0.92, green:0.92, blue:0.92, alpha:1.0).cgColor
+
         return textView
     }()
     
@@ -33,18 +32,23 @@ class ShowBibleVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "닫기", style: .plain, target: self, action:  #selector(cancelAction))
-        view.backgroundColor = .yellow
+        
+        self.navigationController?.navigationBar.barTintColor = UIColor(red:0.97, green:0.97, blue:0.97, alpha:1.0)
+        self.navigationController?.navigationBar.tintColor = UIColor.lightGray
+        self.navigationController?.navigationBar.setValue(true, forKey: "hidesShadow")
+        
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "뒤로", style: .plain, target: self, action:  #selector(cancelAction))
+        view.backgroundColor = UIColor(red:0.92, green:0.92, blue:0.92, alpha:1.0)
         onPostShowBible()
         
         //onHttpRequest()
         
-        
         view.addSubview(commentTextView)
         
-        commentTextView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        commentTextView.leftAnchor.constraint(equalTo: view.leftAnchor,constant: 5).isActive = true
+        commentTextView.rightAnchor.constraint(equalTo: view.rightAnchor,constant: -5).isActive = true
         commentTextView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
-        commentTextView.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
+        //commentTextView.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
         commentTextView.heightAnchor.constraint(equalTo: view.heightAnchor).isActive = true
         
     }
@@ -52,13 +56,15 @@ class ShowBibleVC: UIViewController {
     
     func onPostShowBible(){
         var bibletext = ""
+        var jang = ""
+        var title = ""
         print("포스트 방식 데이터 가지러옴")
         // 1. 전송할 값 준비
         //2. JSON 객체로 변환할 딕셔너리 준비
         //let parameter = ["create_name" : "kkkkkkkk", "create_age" : "909090"]
         //let postString = "create_name=13&create_age=Jack"
         // 3. URL 객체 정의
-        guard let url = URL(string: "http://169.254.232.102:3003/bible_search") else {return}
+        guard let url = URL(string: "https://polar-reef-71177.herokuapp.com/bible_search_json") else {return}
         
         // 3. URLRequest 객체 정의 및 요청 내용 담기
         var request = URLRequest(url: url)
@@ -95,19 +101,27 @@ class ShowBibleVC: UIViewController {
                             
                             if let book = data["book"] , let chapter = data["chapter"] ,let verse = data["verse"] ,let content = data["content"]{
                                 
-                        print( String(describing: book) + String(describing: chapter) + String(describing: verse) + String(describing: content))
-                                //print(book)
-                               // print(chapter)
-                               // print(verse)
-                               // print(content)
-                                 bibletext += String(describing: book) + String(describing: chapter) + String(describing: verse) + String(describing: content)
+                        
+//                                 bibletext += String(describing: book) + String(describing: chapter) + String(describing: verse) + String(describing: content) + "\n"
+                                
+                                jang = String(describing: chapter)
+                                title = String(describing: book)
+                                
+                                bibletext += String(describing: verse) + "." + String(describing: content) + "\n\n"
                             }
     
                         }
                     }
                     DispatchQueue.main.async {
+                        //라인 간격 줄간격
+                        let style = NSMutableParagraphStyle()
+                        style.lineSpacing = 7
+                        let attributes = [NSAttributedStringKey.paragraphStyle : style,NSAttributedStringKey.font:UIFont(name: "NanumMyeongjo-YetHangul", size: 16)]
+                        self.commentTextView.attributedText = NSAttributedString(string: bibletext, attributes: attributes)
                         
-                        self.commentTextView.text = "\(bibletext)"
+                        let title_ko = self.searchBibleName(index: Int(title)!)
+                        
+                        self.navigationItem.title = "\(title_ko) \(jang)장"
                     }
                     
                     // Check for the weather parameter as an array of dictionaries and than excess the first array's description
@@ -143,13 +157,86 @@ class ShowBibleVC: UIViewController {
     
 
     
+    func searchBibleName(index: Int) -> String {
+        let searchIndex = index - 1
+        
+        let book = [ "창세기",
+                    "출애굽기",
+                    "레위기",
+                    "민수기",
+                    "신명기",
+                    "여호수아",
+                    "사사기",
+                    "룻기",
+                    "사무엘상",
+                    "사무엘하",
+                    "열왕기상",
+                    "열왕기하",
+                    "역대상",
+                    "역대하",
+                    "에스라",
+                    "느헤미야",
+                    "에스더",
+                    "욥기",
+                    "시편",
+                    "잠언",
+                    "전도서",
+                    "아가서",
+                    "이사야",
+                    "예레미야",
+                    "예레미야애가",
+                    "에스겔",
+                    "다니엘",
+                    "호세아",
+                    "요엘",
+                    "아모스",
+                    "오바댜",
+                    "요나",
+                    "미가",
+                    "나훔",
+                    "하박국",
+                    "스바냐",
+                    "학개",
+                    "스가랴",
+                    "말라기",
+                    "마태복음",
+                    "마가복음",
+                    "누가복음",
+                    "요한복음",
+                    "사도행전",
+                    "로마서",
+                    "고린도전서",
+                    "고린도후서",
+                    "갈라디아서",
+                    "에베소서",
+                    "빌립보서",
+                    "골로새서",
+                    "데살로니가전서",
+                    "데살로니가후서",
+                    "디모데전서",
+                    "디모데후서",
+                    "디도서",
+                    "빌레몬서",
+                    "히브리서",
+                    "야고보서",
+                    "베드로전서",
+                    "베드로후서",
+                    "요한일서",
+                    "요한이서",
+                    "요한삼서",
+                    "유다서",
+                    "요한계시록"]
+        
+        return book[searchIndex]
+    }
+
    
     
     func onHttpRequest() {
         
         
         //URL생성
-        guard let url = URL(string: "http://169.254.232.102:3003/users") else {return}
+        guard let url = URL(string: "https://polar-reef-71177.herokuapp.com/bible_search_json") else {return}
         
         var request = URLRequest(url: url)
         request.httpMethod = "get" //get : Get 방식, post : Post 방식
@@ -190,7 +277,7 @@ class ShowBibleVC: UIViewController {
         let parameter = ["create_name" : "kkkkkkkk", "create_age" : "909090"]
         //let postString = "create_name=13&create_age=Jack"
         // 3. URL 객체 정의
-        guard let url = URL(string: "http://169.254.251.88:3003/user_create") else {return}
+        guard let url = URL(string: "https://polar-reef-71177.herokuapp.com/bible_search_json") else {return}
         // 3. URLRequest 객체 정의 및 요청 내용 담기
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
